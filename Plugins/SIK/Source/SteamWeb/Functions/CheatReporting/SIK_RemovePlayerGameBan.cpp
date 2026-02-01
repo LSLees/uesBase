@@ -1,0 +1,34 @@
+﻿// Copyright (c) 2024 Betide Studio. All Rights Reserved.
+
+
+#include "SIK_RemovePlayerGameBan.h"
+
+USIK_RemovePlayerGameBan* USIK_RemovePlayerGameBan::RemovePlayerGameBan(const FString& Key, const int64& SteamID,
+	const int32& AppID)
+{
+	USIK_RemovePlayerGameBan* Proxy = NewObject<USIK_RemovePlayerGameBan>();
+	Proxy->Var_Key = Key;
+	Proxy->Var_SteamID = SteamID;
+	Proxy->Var_AppID = AppID;
+	return Proxy;
+}
+
+void USIK_RemovePlayerGameBan::Activate()
+{
+	Super::Activate();
+	FString URL = FString::Printf(TEXT("%s/ICheatReportingService/RemovePlayerGameBan/v1/"), *APIEndpoint);
+	TSharedRef<IHttpRequest> Request = FHttpModule::Get().CreateRequest();
+	Request->SetURL(URL);
+	Request->SetVerb("POST");
+	Request->SetHeader("Content-Type", "application/x-www-form-urlencoded");
+	TSharedPtr<FJsonObject> JsonObject = MakeShareable(new FJsonObject);
+	JsonObject->SetStringField("key", Var_Key);
+	JsonObject->SetNumberField("appid", Var_AppID);
+	JsonObject->SetNumberField("steamid", Var_SteamID);
+	FString Content;
+	TSharedRef<TJsonWriter<TCHAR>> Writer = TJsonWriterFactory<TCHAR>::Create(&Content);
+	FJsonSerializer::Serialize(JsonObject.ToSharedRef(), Writer);
+	Request->SetContentAsString(FString::Printf(TEXT("key=%s&input_json=%s"), *Var_Key, *Content));
+	Request->OnProcessRequestComplete().BindUObject(this, &USIK_RemovePlayerGameBan::OnResponseReceived);
+	Request->ProcessRequest();
+}
