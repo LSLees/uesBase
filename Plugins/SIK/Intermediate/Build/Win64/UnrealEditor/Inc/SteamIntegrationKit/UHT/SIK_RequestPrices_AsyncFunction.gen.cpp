@@ -1,0 +1,264 @@
+// Copyright Epic Games, Inc. All Rights Reserved.
+/*===========================================================================
+	Generated code exported from UnrealHeaderTool.
+	DO NOT modify this manually! Edit the corresponding .h files instead!
+===========================================================================*/
+
+#include "UObject/GeneratedCppIncludes.h"
+#include "SteamIntegrationKit/Functions/Inventory/SIK_RequestPrices_AsyncFunction.h"
+
+PRAGMA_DISABLE_DEPRECATION_WARNINGS
+static_assert(!UE_WITH_CONSTINIT_UOBJECT, "This generated code can only be compiled with !UE_WITH_CONSTINIT_OBJECT");
+void EmptyLinkFunctionForGeneratedCodeSIK_RequestPrices_AsyncFunction() {}
+
+// ********** Begin Cross Module References ********************************************************
+ENGINE_API UClass* Z_Construct_UClass_UBlueprintAsyncActionBase();
+STEAMINTEGRATIONKIT_API UClass* Z_Construct_UClass_USIK_RequestPrices_AsyncFunction();
+STEAMINTEGRATIONKIT_API UClass* Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_NoRegister();
+STEAMINTEGRATIONKIT_API UEnum* Z_Construct_UEnum_SteamIntegrationKit_ESIK_Result();
+STEAMINTEGRATIONKIT_API UFunction* Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature();
+UPackage* Z_Construct_UPackage__Script_SteamIntegrationKit();
+// ********** End Cross Module References **********************************************************
+
+// ********** Begin Delegate FOnRequestPrices ******************************************************
+struct Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics
+{
+	struct _Script_SteamIntegrationKit_eventOnRequestPrices_Parms
+	{
+		TEnumAsByte<ESIK_Result> Result;
+		FString CurrencyCode;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "ModuleRelativePath", "Functions/Inventory/SIK_RequestPrices_AsyncFunction.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_CurrencyCode_MetaData[] = {
+		{ "NativeConst", "" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Delegate FOnRequestPrices constinit property declarations **********************
+	static const UECodeGen_Private::FBytePropertyParams NewProp_Result;
+	static const UECodeGen_Private::FStrPropertyParams NewProp_CurrencyCode;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Delegate FOnRequestPrices constinit property declarations ************************
+	static const UECodeGen_Private::FDelegateFunctionParams FuncParams;
+};
+
+// ********** Begin Delegate FOnRequestPrices Property Definitions *********************************
+const UECodeGen_Private::FBytePropertyParams Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::NewProp_Result = { "Result", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Byte, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_SteamIntegrationKit_eventOnRequestPrices_Parms, Result), Z_Construct_UEnum_SteamIntegrationKit_ESIK_Result, METADATA_PARAMS(0, nullptr) }; // 655382749
+const UECodeGen_Private::FStrPropertyParams Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::NewProp_CurrencyCode = { "CurrencyCode", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Str, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(_Script_SteamIntegrationKit_eventOnRequestPrices_Parms, CurrencyCode), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrencyCode_MetaData), NewProp_CurrencyCode_MetaData) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::NewProp_Result,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::NewProp_CurrencyCode,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::PropPointers) < 2048);
+// ********** End Delegate FOnRequestPrices Property Definitions ***********************************
+const UECodeGen_Private::FDelegateFunctionParams Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UPackage__Script_SteamIntegrationKit, nullptr, "OnRequestPrices__DelegateSignature", 	Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::PropPointers), 
+sizeof(Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::_Script_SteamIntegrationKit_eventOnRequestPrices_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x00130000, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::Function_MetaDataParams), Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::_Script_SteamIntegrationKit_eventOnRequestPrices_Parms) < MAX_uint16);
+UFunction* Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUDelegateFunction(&ReturnFunction, Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+void FOnRequestPrices_DelegateWrapper(const FMulticastScriptDelegate& OnRequestPrices, ESIK_Result Result, const FString& CurrencyCode)
+{
+	struct _Script_SteamIntegrationKit_eventOnRequestPrices_Parms
+	{
+		TEnumAsByte<ESIK_Result> Result;
+		FString CurrencyCode;
+	};
+	_Script_SteamIntegrationKit_eventOnRequestPrices_Parms Parms;
+	Parms.Result=Result;
+	Parms.CurrencyCode=CurrencyCode;
+	OnRequestPrices.ProcessMulticastDelegate<UObject>(&Parms);
+}
+// ********** End Delegate FOnRequestPrices ********************************************************
+
+// ********** Begin Class USIK_RequestPrices_AsyncFunction Function RequestPrices ******************
+struct Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics
+{
+	struct SIK_RequestPrices_AsyncFunction_eventRequestPrices_Parms
+	{
+		USIK_RequestPrices_AsyncFunction* ReturnValue;
+	};
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[] = {
+		{ "BlueprintInternalUseOnly", "true" },
+		{ "Category", "Steam Integration Kit || SDK Functions || Inventory" },
+		{ "DisplayName", "Request Prices" },
+		{ "ModuleRelativePath", "Functions/Inventory/SIK_RequestPrices_AsyncFunction.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Function RequestPrices constinit property declarations *************************
+	static const UECodeGen_Private::FObjectPropertyParams NewProp_ReturnValue;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Function RequestPrices constinit property declarations ***************************
+	static const UECodeGen_Private::FFunctionParams FuncParams;
+};
+
+// ********** Begin Function RequestPrices Property Definitions ************************************
+const UECodeGen_Private::FObjectPropertyParams Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::NewProp_ReturnValue = { "ReturnValue", nullptr, (EPropertyFlags)0x0010000000000580, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(SIK_RequestPrices_AsyncFunction_eventRequestPrices_Parms, ReturnValue), Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_NoRegister, METADATA_PARAMS(0, nullptr) };
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::NewProp_ReturnValue,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::PropPointers) < 2048);
+// ********** End Function RequestPrices Property Definitions **************************************
+const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::FuncParams = { { (UObject*(*)())Z_Construct_UClass_USIK_RequestPrices_AsyncFunction, nullptr, "RequestPrices", 	Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::PropPointers, 
+	UE_ARRAY_COUNT(Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::PropPointers), 
+sizeof(Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::SIK_RequestPrices_AsyncFunction_eventRequestPrices_Parms),
+RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x04022401, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::Function_MetaDataParams), Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::Function_MetaDataParams)},  };
+static_assert(sizeof(Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::SIK_RequestPrices_AsyncFunction_eventRequestPrices_Parms) < MAX_uint16);
+UFunction* Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices()
+{
+	static UFunction* ReturnFunction = nullptr;
+	if (!ReturnFunction)
+	{
+		UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices_Statics::FuncParams);
+	}
+	return ReturnFunction;
+}
+DEFINE_FUNCTION(USIK_RequestPrices_AsyncFunction::execRequestPrices)
+{
+	P_FINISH;
+	P_NATIVE_BEGIN;
+	*(USIK_RequestPrices_AsyncFunction**)Z_Param__Result=USIK_RequestPrices_AsyncFunction::RequestPrices();
+	P_NATIVE_END;
+}
+// ********** End Class USIK_RequestPrices_AsyncFunction Function RequestPrices ********************
+
+// ********** Begin Class USIK_RequestPrices_AsyncFunction *****************************************
+FClassRegistrationInfo Z_Registration_Info_UClass_USIK_RequestPrices_AsyncFunction;
+UClass* USIK_RequestPrices_AsyncFunction::GetPrivateStaticClass()
+{
+	using TClass = USIK_RequestPrices_AsyncFunction;
+	if (!Z_Registration_Info_UClass_USIK_RequestPrices_AsyncFunction.InnerSingleton)
+	{
+		GetPrivateStaticClassBody(
+			TClass::StaticPackage(),
+			TEXT("SIK_RequestPrices_AsyncFunction"),
+			Z_Registration_Info_UClass_USIK_RequestPrices_AsyncFunction.InnerSingleton,
+			StaticRegisterNativesUSIK_RequestPrices_AsyncFunction,
+			sizeof(TClass),
+			alignof(TClass),
+			TClass::StaticClassFlags,
+			TClass::StaticClassCastFlags(),
+			TClass::StaticConfigName(),
+			(UClass::ClassConstructorType)InternalConstructor<TClass>,
+			(UClass::ClassVTableHelperCtorCallerType)InternalVTableHelperCtorCaller<TClass>,
+			UOBJECT_CPPCLASS_STATICFUNCTIONS_FORCLASS(TClass),
+			&TClass::Super::StaticClass,
+			&TClass::WithinClass::StaticClass
+		);
+	}
+	return Z_Registration_Info_UClass_USIK_RequestPrices_AsyncFunction.InnerSingleton;
+}
+UClass* Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_NoRegister()
+{
+	return USIK_RequestPrices_AsyncFunction::GetPrivateStaticClass();
+}
+struct Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics
+{
+#if WITH_METADATA
+	static constexpr UECodeGen_Private::FMetaDataPairParam Class_MetaDataParams[] = {
+		{ "IncludePath", "Functions/Inventory/SIK_RequestPrices_AsyncFunction.h" },
+		{ "ModuleRelativePath", "Functions/Inventory/SIK_RequestPrices_AsyncFunction.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnSuccess_MetaData[] = {
+		{ "ModuleRelativePath", "Functions/Inventory/SIK_RequestPrices_AsyncFunction.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_OnFailure_MetaData[] = {
+		{ "ModuleRelativePath", "Functions/Inventory/SIK_RequestPrices_AsyncFunction.h" },
+	};
+#endif // WITH_METADATA
+
+// ********** Begin Class USIK_RequestPrices_AsyncFunction constinit property declarations *********
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnSuccess;
+	static const UECodeGen_Private::FMulticastDelegatePropertyParams NewProp_OnFailure;
+	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+// ********** End Class USIK_RequestPrices_AsyncFunction constinit property declarations ***********
+	static constexpr UE::CodeGen::FClassNativeFunction Funcs[] = {
+		{ .NameUTF8 = UTF8TEXT("RequestPrices"), .Pointer = &USIK_RequestPrices_AsyncFunction::execRequestPrices },
+	};
+	static UObject* (*const DependentSingletons[])();
+	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
+		{ &Z_Construct_UFunction_USIK_RequestPrices_AsyncFunction_RequestPrices, "RequestPrices" }, // 2149959074
+	};
+	static_assert(UE_ARRAY_COUNT(FuncInfo) < 2048);
+	static constexpr FCppClassTypeInfoStatic StaticCppClassTypeInfo = {
+		TCppClassTypeTraits<USIK_RequestPrices_AsyncFunction>::IsAbstract,
+	};
+	static const UECodeGen_Private::FClassParams ClassParams;
+}; // struct Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics
+
+// ********** Begin Class USIK_RequestPrices_AsyncFunction Property Definitions ********************
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::NewProp_OnSuccess = { "OnSuccess", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USIK_RequestPrices_AsyncFunction, OnSuccess), Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnSuccess_MetaData), NewProp_OnSuccess_MetaData) }; // 2622092839
+const UECodeGen_Private::FMulticastDelegatePropertyParams Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::NewProp_OnFailure = { "OnFailure", nullptr, (EPropertyFlags)0x0010000010080000, UECodeGen_Private::EPropertyGenFlags::InlineMulticastDelegate, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(USIK_RequestPrices_AsyncFunction, OnFailure), Z_Construct_UDelegateFunction_SteamIntegrationKit_OnRequestPrices__DelegateSignature, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_OnFailure_MetaData), NewProp_OnFailure_MetaData) }; // 2622092839
+const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::PropPointers[] = {
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::NewProp_OnSuccess,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::NewProp_OnFailure,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::PropPointers) < 2048);
+// ********** End Class USIK_RequestPrices_AsyncFunction Property Definitions **********************
+UObject* (*const Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::DependentSingletons[])() = {
+	(UObject* (*)())Z_Construct_UClass_UBlueprintAsyncActionBase,
+	(UObject* (*)())Z_Construct_UPackage__Script_SteamIntegrationKit,
+};
+static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::DependentSingletons) < 16);
+const UECodeGen_Private::FClassParams Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::ClassParams = {
+	&USIK_RequestPrices_AsyncFunction::StaticClass,
+	nullptr,
+	&StaticCppClassTypeInfo,
+	DependentSingletons,
+	FuncInfo,
+	Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::PropPointers,
+	nullptr,
+	UE_ARRAY_COUNT(DependentSingletons),
+	UE_ARRAY_COUNT(FuncInfo),
+	UE_ARRAY_COUNT(Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::PropPointers),
+	0,
+	0x009000A0u,
+	METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::Class_MetaDataParams), Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::Class_MetaDataParams)
+};
+void USIK_RequestPrices_AsyncFunction::StaticRegisterNativesUSIK_RequestPrices_AsyncFunction()
+{
+	UClass* Class = USIK_RequestPrices_AsyncFunction::StaticClass();
+	FNativeFunctionRegistrar::RegisterFunctions(Class, MakeConstArrayView(Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::Funcs));
+}
+UClass* Z_Construct_UClass_USIK_RequestPrices_AsyncFunction()
+{
+	if (!Z_Registration_Info_UClass_USIK_RequestPrices_AsyncFunction.OuterSingleton)
+	{
+		UECodeGen_Private::ConstructUClass(Z_Registration_Info_UClass_USIK_RequestPrices_AsyncFunction.OuterSingleton, Z_Construct_UClass_USIK_RequestPrices_AsyncFunction_Statics::ClassParams);
+	}
+	return Z_Registration_Info_UClass_USIK_RequestPrices_AsyncFunction.OuterSingleton;
+}
+USIK_RequestPrices_AsyncFunction::USIK_RequestPrices_AsyncFunction(const FObjectInitializer& ObjectInitializer) : Super(ObjectInitializer) {}
+DEFINE_VTABLE_PTR_HELPER_CTOR_NS(, USIK_RequestPrices_AsyncFunction);
+USIK_RequestPrices_AsyncFunction::~USIK_RequestPrices_AsyncFunction() {}
+// ********** End Class USIK_RequestPrices_AsyncFunction *******************************************
+
+// ********** Begin Registration *******************************************************************
+struct Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_SteamIntegrationKit_Source_SteamIntegrationKit_Functions_Inventory_SIK_RequestPrices_AsyncFunction_h__Script_SteamIntegrationKit_Statics
+{
+	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
+		{ Z_Construct_UClass_USIK_RequestPrices_AsyncFunction, USIK_RequestPrices_AsyncFunction::StaticClass, TEXT("USIK_RequestPrices_AsyncFunction"), &Z_Registration_Info_UClass_USIK_RequestPrices_AsyncFunction, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(USIK_RequestPrices_AsyncFunction), 1467291555U) },
+	};
+}; // Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_SteamIntegrationKit_Source_SteamIntegrationKit_Functions_Inventory_SIK_RequestPrices_AsyncFunction_h__Script_SteamIntegrationKit_Statics 
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_SteamIntegrationKit_Source_SteamIntegrationKit_Functions_Inventory_SIK_RequestPrices_AsyncFunction_h__Script_SteamIntegrationKit_1618112463{
+	TEXT("/Script/SteamIntegrationKit"),
+	Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_SteamIntegrationKit_Source_SteamIntegrationKit_Functions_Inventory_SIK_RequestPrices_AsyncFunction_h__Script_SteamIntegrationKit_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_build_U5M_Sync_LocalBuilds_PluginTemp_HostProject_Plugins_SteamIntegrationKit_Source_SteamIntegrationKit_Functions_Inventory_SIK_RequestPrices_AsyncFunction_h__Script_SteamIntegrationKit_Statics::ClassInfo),
+	nullptr, 0,
+	nullptr, 0,
+};
+// ********** End Registration *********************************************************************
+
+PRAGMA_ENABLE_DEPRECATION_WARNINGS

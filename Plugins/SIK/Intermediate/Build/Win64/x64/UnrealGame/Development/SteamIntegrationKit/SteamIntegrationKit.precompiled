@@ -1,0 +1,21 @@
+{
+	"OutputFiles": [
+		"Module.SteamIntegrationKit.1.cpp.obj",
+		"Module.SteamIntegrationKit.2.cpp.obj",
+		"Module.SteamIntegrationKit.3.cpp.obj",
+		"Module.SteamIntegrationKit.4.cpp.obj",
+		"Module.SteamIntegrationKit.5.cpp.obj",
+		"Module.SteamIntegrationKit.6.cpp.obj",
+		"Module.SteamIntegrationKit.7.cpp.obj",
+		"Module.SteamIntegrationKit.8.cpp.obj",
+		"Module.SteamIntegrationKit.9.cpp.obj",
+		"Module.SteamIntegrationKit.10.cpp.obj",
+		"Module.SteamIntegrationKit.11.cpp.obj",
+		"Module.SteamIntegrationKit.12.cpp.obj",
+		"Module.SteamIntegrationKit.13.cpp.obj",
+		"Module.SteamIntegrationKit.14.cpp.obj",
+		"Module.SteamIntegrationKit.15.cpp.obj",
+		"Module.SteamIntegrationKit.16.cpp.obj",
+		"Module.SteamIntegrationKit.17.cpp.obj"
+	]
+}
